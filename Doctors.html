@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://localhost/i-care/patient/doctors.php?action=view&id=10 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Doctors_files/animations.css">  
+    <link rel="stylesheet" href="./Doctors_files/main.css">  
+    <link rel="stylesheet" href="./Doctors_files/admin.css">
+        
+    <title>Doctors</title>
+    <style>
+        .popup{
+            animation: transitionIn-Y-bottom 0.5s;
+        }
+        .sub-table{
+            animation: transitionIn-Y-bottom 0.5s;
+        }
+</style>
+</head>
+<body>
+        <div class="container">
+        <div class="menu">
+            <table class="menu-container" border="0">
+                <tbody><tr>
+                    <td style="padding:10px" colspan="2">
+                        <table border="0" class="profile-container">
+                            <tbody><tr>
+                                <td width="30%" style="padding-left:20px">
+                                    <img src="./Doctors_files/user.png" alt="" width="100%" style="border-radius:50%">
+                                </td>
+                                <td style="padding:0px;margin:0px;">
+                                    <p class="profile-title">syed javeed..</p>
+                                    <p class="profile-subtitle">syedjaveed6408@gmail.c</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                <a href="http://localhost/i-care/logout.php"><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                </td>
+                            </tr>
+                    </tbody></table>
+                    </td>
+                
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-home ">
+                        <a href="http://localhost/i-care/patient/index.php" class="non-style-link-menu "></a><div><a href="http://localhost/i-care/patient/index.php" class="non-style-link-menu "><p class="menu-text">Home</p></a></div>
+                    </td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor menu-active menu-icon-doctor-active">
+                        <a href="http://localhost/i-care/patient/doctors.php" class="non-style-link-menu non-style-link-menu-active"></a><div><a href="http://localhost/i-care/patient/doctors.php" class="non-style-link-menu non-style-link-menu-active"><p class="menu-text">All Doctors</p></a></div>
+                    </td>
+                </tr>
+                
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-session">
+                        <a href="http://localhost/i-care/patient/schedule.php" class="non-style-link-menu"><div><p class="menu-text">Scheduled Sessions</p></div></a>
+                    </td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-appoinment">
+                        <a href="http://localhost/i-care/patient/appointment.php" class="non-style-link-menu"></a><div><a href="http://localhost/i-care/patient/appointment.php" class="non-style-link-menu"><p class="menu-text">My Bookings</p></a></div>
+                    </td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-settings">
+                        <a href="http://localhost/i-care/patient/settings.php" class="non-style-link-menu"></a><div><a href="http://localhost/i-care/patient/settings.php" class="non-style-link-menu"><p class="menu-text">Settings</p></a></div>
+                    </td>
+                </tr>
+                
+            </tbody></table>
+        </div>
+        <div class="dash-body">
+            <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;margin-top:25px; ">
+                <tbody><tr>
+                    <td width="13%">
+                        <a href="http://localhost/i-care/patient/doctors.php"><button class="login-btn btn-primary-soft btn btn-icon-back" style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
+                    </td>
+                    <td>
+                        
+                        <form action="http://localhost/i-care/patient/doctors.php?action=view&amp;id=10" method="post" class="header-search">
+
+                            <input type="search" name="search" class="input-text header-searchbar" placeholder="Search Doctor name or Email" list="doctors">&nbsp;&nbsp;
+                            
+                            <datalist id="doctors"><option value="Syed"><br></option><option value="doctor@edoc.com"><br></option><option value="Dr. Azhar Almas C M"><br></option><option value="azhar456@gmail.com"><br></option><option value="Dr. Abey Verghese Chacko"><br></option><option value="drabey123@gmail.com"><br></option><option value="Dr. Ajay Handa"><br></option><option value="ajay456@gmail.com"><br></option><option value="Dr. Afsar Fatima"><br></option><option value="fathima789@gmail.com"><br></option><option value="Dr. Asha Thomas"><br></option><option value="thoash123@gmail.com"><br></option><option value="Dr. Krishnaprasad M"><br></option><option value="prasad345@gmail.com"><br></option><option value="Dr. V. Mahalakshmi"><br></option><option value="maha758@gmail.com"><br> </option></datalist>                            
+                       
+                            <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                        
+                        </form>
+                        
+                    </td>
+                    <td width="15%">
+                        <p style="font-size: 14px;color: rgb(119, 119, 119);padding: 0;margin: 0;text-align: right;">
+                            Today's Date
+                        </p>
+                        <p class="heading-sub12" style="padding: 0;margin: 0;">
+                            2024-04-03                        </p>
+                    </td>
+                    <td width="10%">
+                        <button class="btn-label" style="display: flex;justify-content: center;align-items: center;"><img src="./Doctors_files/calendar.svg" width="100%"></button>
+                    </td>
+
+
+                </tr>
+               
+                
+                <tr>
+                    <td colspan="4" style="padding-top:10px;">
+                        <p class="heading-main12" style="margin-left: 45px;font-size:18px;color:rgb(49, 49, 49)">All Doctors (8)</p>
+                    </td>
+                    
+                </tr>
+                                  
+                <tr>
+                   <td colspan="4">
+                       <center>
+                        <div class="abc scroll">
+                        <table width="93%" class="sub-table scrolldown" border="0">
+                        <thead>
+                        <tr>
+                                <th class="table-headin">
+                                    
+                                
+                                Doctor Name
+                                
+                                </th>
+                                <th class="table-headin">
+                                    Email
+                                </th>
+                                <th class="table-headin">
+                                    
+                                    Specialties
+                                    
+                                </th>
+                                <th class="table-headin">
+                                    
+                                    Events
+                                    
+                                </th></tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                        <td> &nbsp;Dr. V. Mahalakshmi</td>
+                                        <td>
+                                        maha758@gmail.com
+                                        </td>
+                                        <td>
+                                            Physical medicine an
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=10" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=10&amp;name=Dr.%20V.%20Mahalakshmi" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Dr. Krishnaprasad M</td>
+                                        <td>
+                                        prasad345@gmail.com
+                                        </td>
+                                        <td>
+                                            General surgery
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=9" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=9&amp;name=Dr.%20Krishnaprasad%20M" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Dr. Asha Thomas</td>
+                                        <td>
+                                        thoash123@gmail.com
+                                        </td>
+                                        <td>
+                                            Radiology
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=8" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=8&amp;name=Dr.%20Asha%20Thomas" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Dr. Afsar Fatima</td>
+                                        <td>
+                                        fathima789@gmail.com
+                                        </td>
+                                        <td>
+                                            General surgery
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=7" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=7&amp;name=Dr.%20Afsar%20Fatima" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Dr. Ajay Handa</td>
+                                        <td>
+                                        ajay456@gmail.com
+                                        </td>
+                                        <td>
+                                            Neurosurgery
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=6" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=6&amp;name=Dr.%20Ajay%20Handa" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Dr. Abey Verghese Chacko</td>
+                                        <td>
+                                        drabey123@gmail.com
+                                        </td>
+                                        <td>
+                                            Dental, oral and max
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=5" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=5&amp;name=Dr.%20Abey%20Verghese%20Chacko" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Dr. Azhar Almas C M</td>
+                                        <td>
+                                        azhar456@gmail.com
+                                        </td>
+                                        <td>
+                                            Orthopaedics
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=4" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=4&amp;name=Dr.%20Azhar%20Almas%20C%20M" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr><tr>
+                                        <td> &nbsp;Syed</td>
+                                        <td>
+                                        doctor@edoc.com
+                                        </td>
+                                        <td>
+                                            Accident and emergen
+                                        </td>
+
+                                        <td>
+                                        <div style="display:flex;justify-content: center;">
+                                        
+                                        <a href="http://localhost/i-care/patient/doctors.php?action=view&amp;id=1" class="non-style-link"><button class="btn-primary-soft btn button-icon btn-view" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
+                                       &nbsp;&nbsp;&nbsp;
+                                       <a href="http://localhost/i-care/patient/doctors.php?action=session&amp;id=1&amp;name=Syed" class="non-style-link"><button class="btn-primary-soft btn button-icon menu-icon-session-active" style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Sessions</font></button></a>
+                                        </div>
+                                        </td>
+                                    </tr> 
+                            </tbody>
+
+                        </table>
+                        </div>
+                        </center>
+                   </td> 
+                </tr>
+                       
+                        
+                        
+            </tbody></table>
+        </div>
+    </div>
+    
+            <div id="popup1" class="overlay">
+                    <div class="popup">
+                    <center>
+                        <h2></h2>
+                        <a class="close" href="http://localhost/i-care/patient/doctors.php">×</a>
+                        <div class="content">
+                            icare Web App<br>
+                            
+                        </div>
+                        <div style="display: flex;justify-content: center;">
+                        <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
+                        
+                            <tbody><tr>
+                                <td>
+                                    <p style="padding: 0;margin: 0;text-align: left;font-size: 25px;font-weight: 500;">View Details.</p><br><br>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="label-td" colspan="2">
+                                    <label for="name" class="form-label">Name: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    Dr. V. Mahalakshmi<br><br>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="Email" class="form-label">Email: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                maha758@gmail.com<br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="nic" class="form-label">NIC: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                8<br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="Tele" class="form-label">Telephone: </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                +91 – 80 – 2202<br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-td" colspan="2">
+                                    <label for="spec" class="form-label">Specialties: </label>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                            <td class="label-td" colspan="2">
+                            Physical medicine and rehabilitation<br><br>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <a href="http://localhost/i-care/patient/doctors.php"><input type="button" value="OK" class="login-btn btn-primary-soft btn"></a>
+                                
+                                    
+                                </td>
+                
+                            </tr>
+                           
+
+                        </tbody></table>
+                        </div>
+                    </center>
+                    <br><br>
+            </div>
+            </div>
+            
+
+
+</body></html>
